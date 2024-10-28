@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRARIA</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-jplenio-1423600.jpg&fm=jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding-top: 40px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: #b52f2f;
+        }
+        .buttons {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid #b52f2f; /* Borde rojo de los botones */
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .info-container {
+            display: flex; /*alinear la imagen y el texto */
+            align-items: center; 
+            margin-top: 20px; 
+        }
+        .info-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid #b52f2f; /* Borde rojo para el cuadro de texto */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px; 
+            text-align: left; 
+            margin-left: 20px; /*Espacio entre la imagen y el cuadro de texto */
+        }
+        img {
+            width: 480px; 
+            height: auto; 
+            border-radius: 10px; /* hace circular la imagen :b*/
+            border: 2px solid #b52f2f; 
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+    </style>
+</head>
+<body>
+    <h1>TERRARIA</h1>
+    <div class="buttons">
+        <button>Inicio</button>
+        <button onclick="location.href='sobrenosotros.html'">Quienes somos</button>
+        <button>Nuestros clientes</button>
+        <button>Medioambiente</button>
+        <button>Contáctanos</button>
+    </div>
+    <div class="info-container">
+        <img src="https://www.hotosm.org/uploads/iqair.jpg" alt="Una imagen que representa la belleza de la naturaleza">
+        <div class="info-box">
+            <p>🌍 ¡Únete al Cambio! Protege Nuestro Planeta 🌱</p>
+            <p>El futuro de nuestro planeta está en nuestras manos. Cada acción cuenta, y juntos podemos hacer la diferencia.</p>
+            <p><strong>Sostenibilidad:</strong> Opta por productos reciclables, reduce el uso de plásticos y elige opciones sostenibles. Cada pequeño gesto suma.</p>
+            <p><strong>Protección de Hábitats:</strong> Apoya la conservación de nuestros ecosistemas. Desde los bosques hasta los océanos, cada hábitat es vital para la biodiversidad. Hazte parte de iniciativas que protegen la flora y fauna local.</p>
+            <p><strong>Tu Voz Importa:</strong> Infórmate, educa a otros y sé un defensor del medio ambiente. Comparte tu compromiso en redes sociales y motiva a tus amigos a unirse.</p>
+            <p>¡Actúa hoy por un mañana más verde! La Tierra te lo agradecerá. 🌿✨</p>
+            <p>#CuidemosElPlaneta #Sostenibilidad #ProtegeLaNaturaleza</p>
+        </div>
+    </div>
+</body>
+</html>
