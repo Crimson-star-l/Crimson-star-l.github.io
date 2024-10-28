@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRARIA</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-jplenio-1423600.jpg&fm=jpg');
+            background-size: cover;
+            background-position: top center; 
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0; 
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: #b52f2f;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid #b52f2f;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .content {
+            margin-top: 10px;
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .circular {
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #b52f2f;
+            width: 250px; 
+            height: 250px; 
+            margin-top: 80px; /* Subido un poco */
+            background-color: white; 
+            margin-right: 20px; /* Mover a la izquierda */
+        }
+        .text-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 20px 45px; 
+            border: 2px solid #b52f2f;
+        }
+        .image-below {
+            margin: 20px 45px; 
+            display: flex;
+            justify-content: center; 
+            width: 100%; 
+        }
+        .image-below img {
+            max-width: 50%; 
+            height: auto;
+            border: 2px solid #b52f2f; 
+            border-radius: 5px; 
+        }
+        .recopila-text {
+            color: #b52f2f; 
+            font-size: 48px; 
+            margin-left: 20px; /* Espacio entre la imagen y el texto */
+            text-align: left; 
+            margin-top: 20px; /* Menos espacio desde la parte superior */
+            padding: 10px; 
+            background-color: rgba(0, 0, 0, 0.7); 
+            border: 2px solid #b52f2f; 
+            border-radius: 5px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+    </style>
+</head>
+<body>
+    <h1>TERRARIA</h1>
+    <div class="buttons">
+        <button onclick="location.href='index.html'">Inicio</button>
+        <button onclick="location.href='sobrenosotros.html'">Quienes somos</button>
+        <button>Nuestros clientes</button>
+        <button>Medioambiente</button>
+        <button>Contáctanos</button>
+    </div>
+    <div class="content">
+        <div class="image-below">
+            <img src="img/imagen2.jpg" alt="Descripción de la imagen 2">
+        </div>
+        <div class="text-container">
+            <div class="text-box">
+                <h2>¿Qué es TERRARIA?</h2>
+                <p>"Terraria" es una plataforma digital diseñada para asistir en la restauración de hábitats degradados. Basada en el uso de Inteligencia Artificial y datos satelitales, la plataforma recopila y analiza información histórica y actual del sitio; para delimitar, planificar y brindar un protocolo de restauración ecológica. A través de algoritmos avanzados, "Terraria" clasifica las zonas según su nivel de deterioro y potencial de recuperación, y genera planes estratégicos que optimizan la asignación de recursos. De esta manera, contribuye a la conservación de la biodiversidad y la mejora de la resiliencia de los ecosistemas frente a las amenazas ambientales, que en este caso serían los incendios forestales.</p>
+            </div>
+            <div class="text-box">
+                <h2>¿Cómo funciona la plataforma?</h2>
+                <p>El funcionamiento de Terraria se basa en tres fases:</p>
+                <ul>
+                    <li><strong>Recopilación:</strong> La plataforma utiliza datos satelitales y otras fuentes de información para mapear y analizar las áreas afectadas. Se establecen parámetros principales que servirán para la evaluación de prioridad, potencialidad de restauración y cualquier estudio posterior pertinente. La base de datos que se crearán serán resguardadas en los servidores Terraria y solo podrán ser manipuladas por el personal propio de la empresa. Los datos podrán compartirse con los clientes y entes reguladores, pero los algoritmos desarrollados para el manejo de esta información serán privados.</li>
+                    <li><strong>Refinamiento:</strong> Con toda la información almacenada en nuestro sistema, la siguiente fase se encarga del procesamiento de imágenes. Primero se marca la zona de interés a la cual el cliente pide trabajar, para que por medio de algoritmos de IA, se analice el espacio delimitado. El algoritmo desarrollado evaluará las imágenes satelitales del sitio incendiado, tanto históricas como actuales, de tal manera que brindará un primer informe el cual servirá como peritaje de dónde se inició el incendio, cuánto tiempo duró, y si estos siniestros son casos constantes o eventos aislados. Otros parámetros involucrados en este análisis preliminar serían la actividad humana de la zona o condiciones climáticas a las que se afronta.</li>
+                    <li><strong>Restauración:</strong> A partir de la información brindada en la fase anterior, el sistema diseñará un plan estratégico para la rehabilitación del ecosistema, siempre buscando la optimización de los recursos disponibles. La plataforma brindará un informe definitivo con los requerimientos necesarios para restaurar el espacio dañado y será el cliente quien deberá contratar al personal y comprar la maquinaria necesaria. Como esta actividad necesitará de profesionales informados sobre la restauración y cuidado ambiental, “Terraria” ofrecerá el servicio de consultoría en caso que se necesite.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="circular">
+            <img src="img/imagen1.jpg" alt="Descripción de la imagen 1" style="width: 100%; height: auto;">
+        </div>
+        <div class="recopila-text">
+            <div>Recopila</div>
+            <div>Refina</div>
+            <div>Restaura</div>
+        </div>
+    </div>
+</body>
+</html>
